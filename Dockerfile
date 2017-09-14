@@ -4,7 +4,8 @@ MAINTAINER Yannick Cogne
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y python
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y wget
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y bzip2 ps
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y bzip2 
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y ps
 RUN wget  --no-check-certificate https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh  
 RUN chmod +x Miniconda2-latest-Linux-x86_64.sh   
 RUN bash Miniconda2-latest-Linux-x86_64.sh -b -p /usr/miniconda2
